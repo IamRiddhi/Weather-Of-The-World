@@ -1,0 +1,420 @@
+<html>
+<head>
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+<style>
+h1,h2{
+text-align:center;
+font-family:monospace;
+text-transform:uppercase;
+letter-spacing:2px;
+font-size:30px;
+text-shadow: 2px 2px #FF0000;
+}
+body
+{
+	background-image:url('images/snow-1987413_1280.png');
+}
+table
+{
+	width:100%;
+	height:40%;
+	table-layout-fixed;
+	opacity:0.6;
+}
+td
+{
+	width:33.33%;
+	background-color:black;
+}
+img
+{
+	max-width:100%;
+	max-height:100%;
+}
+input[type=text] {
+    width: 20%;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+	box-sizing: border-box;
+	 border-radius:10px;
+	 padding:2px;
+	 font-weight:bold;
+	 font-family:monospace;
+	 height:5%;
+	 margin:1%;
+	 background-color : yellow;
+	 opacity:0.9;
+	 color:green;
+}
+
+/* When the input field gets focus, change its width to 100% */
+input[type=text]:focus {
+    width: 50%;
+}
+#submit
+{
+	background-color: #f44336; /* Red */
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+	box-sizing: border-box;
+	 border-radius:10px;
+	font-weight:bold;
+}
+div
+{
+	width:100%;
+	margin-top:5px;
+	font-family:monospace;
+	margin-left:5px;
+	margin-bottom:5px;
+	font-size:12px;
+	font-weight:bold;
+	color:yellow;
+	
+}
+
+#mydiv
+{
+	text-align:center;
+	margin:1%;
+	width:98%;
+	 box-sizing: border-box;
+	 border-radius:10px;
+	background-color:black;
+	opacity:0.6;
+}
+
+
+</style>
+</head>
+<body>
+<h1><u>Weather Forecast</u></h1>
+<form>
+<input type="text" id="search" placeholder="Enter City....">
+<input type="submit" id="submit">
+</form>
+
+<div id="container">
+	<!--DAY 1-->
+	<div id ="mydiv" style="padding:5px;">
+				<div class="location" style="font-size:16px;">
+				LOCATION:
+				</div>
+				<div class="mydate" style="font-size:16px;">
+				DATE:
+				</div>
+				<div class="speed" style="font-size:16px;">
+				WIND SPEED:
+				</div>
+				<div class="temp" style="font-size:16px;">
+				TEMPERATURE:
+				</div>
+				<div class="pre" style="font-size:16px;">
+				PRESSURE:                                   
+				</div>
+				<div class="hum" style="font-size:16px;">
+				HUMIDITY:
+				</div>
+				<div class="cloud" style="font-size:16px;">
+				CLOUD:
+				</div>
+				<div class="i">
+				</div>
+	</div>	
+	<div id="riddhi">
+		<table border="1">
+			<tr>
+				<!--DAY 2-->
+				<td>
+					<div class="mydate">
+					DATE:
+					</div>
+					<div class="temp">
+					TEMPERATURE:
+					</div>
+					<div class="cloud">
+					CLOUD:
+					</div>
+					<div class="i">
+					</div>
+				</td>
+				
+				<!--DAY 3-->
+				<td>
+					<div class="mydate">
+					DATE:
+					</div>
+					<div class="temp">
+					TEMPERATURE:
+					</div>
+					<div class="cloud">
+					CLOUD:
+					</div>
+					<div class="i">
+					</div>
+				</td>
+				
+			<!--DAY 4-->
+				<td>
+					<div class="mydate">
+					DATE:
+					</div>
+					<div class="temp">
+					TEMPERATURE:
+					</div>
+					<div class="cloud">
+					CLOUD:
+					</div>
+					<div class="i">
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<!--DAY 5-->
+				<td>
+					<div class="mydate">
+					DATE:
+					</div>
+					<div class="temp">
+					TEMPERATURE:
+					</div>
+					<div class="cloud">
+					CLOUD:
+					</div>
+					<div class="i">
+					</div>
+				</td>
+				
+				<!--DAY 6-->
+				<td>
+					<div class="mydate">
+					DATE:
+					</div>
+					<div class="temp">
+					TEMPERATURE:
+					</div>
+					<div class="cloud">
+					CLOUD:
+					</div>
+					<div class="i">
+					</div>
+				</td>
+				
+			<!--DAY 7-->
+				<td>
+					<div class="mydate">
+					DATE:
+					</div>
+					<div class="temp">
+					TEMPERATURE:
+					</div>
+					<div class="cloud">
+					CLOUD:
+					</div>
+					<div class="i">
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<!--DAY 8-->
+				<td>
+					<div class="mydate">
+					DATE:
+					</div>
+					<div class="temp">
+					TEMPERATURE:
+					</div>
+					<div class="cloud">
+					CLOUD:
+					</div>
+					<div class="i">
+					</div>
+				</td>
+				
+				<!--DAY 9-->
+				<td>
+					<div class="mydate">
+					DATE:
+					</div>
+					<div class="temp">
+					TEMPERATURE:
+					</div>
+					<div class="cloud">
+					CLOUD:
+					</div>
+					<div class="i">
+					</div>
+				</td>	
+				
+				<!--DAY 10-->
+				
+				<td>
+					<div class="mydate">
+					DATE:
+					</div>
+					<div class="temp">
+					TEMPERATURE:
+					</div>
+					<div class="cloud">
+					CLOUD:
+					</div>
+					<div class="i">
+					</div>
+				</td>
+			</tr>
+			
+		</table>
+	</div>	
+</div>	
+<script type="text/javascript">
+var myObj , xhttp;
+document.getElementById("container").style.visibility="hidden";
+var sub= document.getElementById("submit");
+sub.value="Search";
+sub.onclick=function()
+{
+	
+	if(document.getElementById("container").style.visibility==="visible")
+	{
+		for(var index=0;index<10;index++)
+		{
+			if(index===0)
+			{
+				document.getElementsByClassName("location")[index].removeChild(document.getElementsByClassName("location")[index].childNodes[1]);
+				document.getElementsByClassName("hum")[index].removeChild(document.getElementsByClassName("hum")[index].childNodes[1]);
+				document.getElementsByClassName("pre")[index].removeChild(document.getElementsByClassName("pre")[index].childNodes[1]);
+				document.getElementsByClassName("speed")[index].removeChild(document.getElementsByClassName("speed")[index].childNodes[1]);
+			}	
+			document.getElementsByClassName("mydate")[index].removeChild(document.getElementsByClassName("mydate")[index].childNodes[1]);
+			document.getElementsByClassName("temp")[index].removeChild(document.getElementsByClassName("temp")[index].childNodes[1]);
+			document.getElementsByClassName("cloud")[index].removeChild(document.getElementsByClassName("cloud")[index].childNodes[1]);
+			document.getElementsByClassName("i")[index].removeChild(document.getElementsByClassName("i")[index].childNodes[1]);
+		}	
+	}
+
+	else	
+		document.getElementById("container").style.visibility="visible";
+	var s= document.getElementById("search").value;
+	s=s.replace(/ /g,'');
+	loadDoc(s);
+	return false;
+}	
+function loadDoc(s) 
+{
+	if (window.XMLHttpRequest) 
+	{
+		// code for modern browsers
+		xhttp = new XMLHttpRequest();
+	 }
+	else 
+	{
+		// code for old IE browsers
+		xhttp = new ActiveXObject("Microsoft.XMLHTTP");
+	}
+	  xhttp.open("GET", "weather.php?city="+s+"", true);
+	  var index,image,ls,ss,str;
+	  xhttp.onreadystatechange = function() {
+	  if (this.readyState == 4 && this.status == 200) 
+		{
+		 
+			myObj = JSON.parse(this.responseText);
+			for(index=0;index<10;index++)
+			{
+				//location
+				if(index===0)
+					document.getElementsByClassName("location")[index].appendChild( document.createTextNode(myObj.query.results.channel.location.city + "," +  myObj.query.results.channel.location.country +".") );
+				
+				//humidity
+				if(index==0)
+					document.getElementsByClassName("hum")[index].appendChild( document.createTextNode(myObj.query.results.channel.atmosphere.humidity +".") );
+				
+				//pressure
+				if(index==0)
+					document.getElementsByClassName("pre")[index].appendChild( document.createTextNode(myObj.query.results.channel.atmosphere.pressure   + " " +myObj.query.results.channel.units.pressure +".") );
+				
+				//date
+                              if(index===0)
+				document.getElementsByClassName("mydate")[index].appendChild( document.createTextNode(myObj.query.results.channel.item.forecast[index].date +"(Today)."));
+                              else
+                                document.getElementsByClassName("mydate")[index].appendChild( document.createTextNode(myObj.query.results.channel.item.forecast[index].date +"."));
+				 
+				//wind speed
+				
+				if(index===0)
+					document.getElementsByClassName("speed")[index].appendChild( document.createTextNode(myObj.query.results.channel.wind.speed + " " +myObj.query.results.channel.units.speed+".") ); 
+				
+				//temperature
+				document.getElementsByClassName("temp")[index].appendChild( document.createTextNode
+				( Math.round(5/9*(myObj.query.results.channel.item.forecast[index].low-32)* 100) / 100  +   "-"+ Math.round(5/9*(myObj.query.results.channel.item.forecast[index].high-32)* 100) / 100 +String.fromCharCode(176)+"C.") );
+				
+				//cloud status
+				document.getElementsByClassName("cloud")[index].appendChild( document.createTextNode(myObj.query.results.channel.item.forecast[index].text +".") );
+				
+				//image
+				image= document.createElement('img');
+				ss=myObj.query.results.channel.item.description.indexOf('h');
+				ls=myObj.query.results.channel.item.description.indexOf('f');
+				str=myObj.query.results.channel.item.description.slice(ss,50);
+				str+= myObj.query.results.channel.item.forecast[index].code;
+		
+				str+= myObj.query.results.channel.item.description.slice(myObj.query.results.channel.item.description.indexOf('.',50),ls+1)
+				image.src=str;
+				document.getElementsByClassName("i")[index].appendChild(image);
+			}
+		}
+	  };
+	  xhttp.send();
+}
+</script>
+</body>
+</html>
+
+
+<!--button code
+button= document.createElement("button");
+	button.appendChild(document.createTextNode("FORECAST>>"));
+	document.getElementById("f").appendChild(button);
+	index =1;
+		button.onclick=function()
+		{
+			//date
+			document.getElementById("mydate").removeChild(document.getElementById("mydate").childNodes[1]);
+			document.getElementById("mydate").appendChild( document.createTextNode(myObj.query.results.channel.item.forecast[index].date +".") );
+			
+			//wind speed.
+			document.getElementById("speed").removeChild(document.getElementById("speed").childNodes[1]);
+			if(index===0)
+				document.getElementById("speed").appendChild( document.createTextNode(myObj.query.results.channel.wind.speed + " " +myObj.query.results.channel.units.speed+".") ); 
+			else
+			document.getElementById("speed").appendChild( document.createTextNode("NOT AVAILABLE"));
+			
+			//TEMP.
+			document.getElementById("temp").removeChild(document.getElementById("temp").childNodes[1]);
+			document.getElementById("temp").appendChild( document.createTextNode("High= " + myObj.query.results.channel.item.forecast[index].high  + "deg " + myObj.query.results.channel.units.temperature + ", Low= "+ myObj.query.results.channel.item.forecast[index].low +  "deg " +myObj.query.results.channel.units.temperature +".") );
+			
+			//pressure
+			document.getElementById("pre").removeChild(document.getElementById("pre").childNodes[1]);
+			if(index===0)
+				document.getElementById("pre").appendChild( document.createTextNode(myObj.query.results.channel.atmosphere.pressure   + " " +myObj.query.results.channel.units.pressure +".") );
+			else
+			document.getElementById("pre").appendChild( document.createTextNode("NOT AVAILABLE"));
+			
+			//humidity
+			document.getElementById("hum").removeChild(document.getElementById("hum").childNodes[1]);
+			if(index===0)
+				document.getElementById("hum").appendChild( document.createTextNode(myObj.query.results.channel.atmosphere.humidity +".") );
+			else
+			document.getElementById("hum").appendChild( document.createTextNode("NOT AVAILABLE"));
+			
+			//cloud status
+			document.getElementById("cloud").removeChild(document.getElementById("cloud").childNodes[1]);
+			document.getElementById("cloud").appendChild( document.createTextNode(myObj.query.results.channel.item.forecast[index].text +".") );
+			
+			index++;
+			if(index>9)
+				index=0;
+		}*/-->
